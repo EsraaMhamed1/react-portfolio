@@ -1,0 +1,198 @@
+.mywork-title{
+  gap: 80px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mywork-title{
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+
+}
+.mywork-title h1{
+  font-size: 80px;
+  font-weight: 600;
+  padding: 0px 30px;
+}
+.mywork-title img{
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+  z-index: -1;
+  width: 150px;
+}
+
+.projects-container {
+  width:60;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+   
+.projects-list {
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  width:100%;
+  justify-content: center;
+}
+  
+.project {
+  height: 300px; 
+  position: relative;
+  display: flex;
+ 
+}
+  
+.project img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  width: 100%;
+}
+  
+.arrow { 
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: rgba(27, 27, 27, 0.5); 
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+.arrow:hover{
+  background: rgba(57, 57, 57, 0.8);
+}
+.left-arrow {
+  color: white;
+  left: 10px;
+}
+  
+.right-arrow {
+  color: white;
+  right: 10px;
+}
+  
+.button {
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  position: absolute;
+}
+  
+.demo-button {
+  left: 10px;
+}
+  
+.github-button {
+  right: 10px;
+}
+
+/* for tablet */
+@media (max-width:900px) {
+  .mywork-title h1{
+    font-size:50px;
+    
+  }
+  .mywork-title img{
+    width: 100px;
+  }
+  
+  .projects-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width:60;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .mywork-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .projects-slider {
+    align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+  }
+    
+    
+  .project {
+    height: 400px;
+    position: relative;
+    min-width: 400px; 
+  }
+    
+  .project img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+  }
+    
+  .arrow { 
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: rgba(27, 27, 27, 0.5); 
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  
+}
+
+
+/* phone */
+@media (max-width:600px) {
+  .mywork-title h1{
+    font-size:30px;
+    
+  }
+  .mywork-title img{
+    width: 65px;
+
+  }
+   
+  
+    
+  .project {
+    height: 200px;
+    position: relative;
+    min-width: 200px; 
+  }
+    
+  .project img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+}
+
