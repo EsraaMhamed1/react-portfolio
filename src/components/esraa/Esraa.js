@@ -25,7 +25,7 @@ const Esraa = () => {
 				<div className='esraa-resume'>
 					<a
 						className='anchor-link'
-						href='https://drive.google.com/file/d/1YcSIWkXdF0moErjjzxIIU2fWUrSsiy3-/view?usp=sharing'>
+						href='https://drive.google.com/file/d/1y60qNM4S4EwSNKdjtEnbwGN7MeNR-b_R/view?usp=drive_link'>
 						My resume
 					</a>
 				</div>

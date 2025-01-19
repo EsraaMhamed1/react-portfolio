@@ -4,11 +4,23 @@ import gmail from '../../assets/gmial.svg';
 import phone from '../../assets/phone.svg';
 import location from '../../assets/location.svg';
 import Logo from '../../assets/Logo.png';
+
 const Contact = () => {
+	const [yourName, setYourName] = useState('');
+	const [yourMail, setYourMail] = useState('');
+	const [yourMessage, setYourMessage] = useState('');
+
 	const [result, setResult] = useState('');
+
+	function handelSubmit() {
+		setYourMail('');
+		setYourName('');
+		setYourMessage('');
+	}
 	const onSubmit = async (event) => {
 		event.preventDefault();
 		setResult('');
+
 		const formData = new FormData(event.target);
 
 		formData.append('access_key', 'fefb490f-de08-4362-87e2-c528f15f9576');
@@ -26,6 +38,7 @@ const Contact = () => {
 			console.log('Error', data);
 			setResult(data.message);
 		}
+		handelSubmit();
 	};
 
 	return (
@@ -41,7 +54,9 @@ const Contact = () => {
 					<div className='contact-details'>
 						<div className='contact-detail'>
 							<img src={gmail} alt='' />
-							<p>esraaeltehawy@gmail.com</p>
+							<a href='mailto:esraaeltehawy@gmail.com'>
+								esraaeltehawy@gmail.com
+							</a>
 						</div>
 						<div className='contact-detail'>
 							<img src={phone} alt='' /> <p>01206787064</p>
@@ -52,18 +67,38 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-				<form onSubmit={onSubmit} className='contact-right'>
+				<form
+					action='/send-email'
+					onSubmit={onSubmit}
+					className='contact-right'
+					method='POST'>
 					<label htmlFor=''>Yor Name</label>
-					<input type='text' placeholder='Enter your name' name='name' />
+					<input
+						type='text'
+						placeholder='Enter your name'
+						name='name'
+						required
+						value={yourName}
+						onChange={(e) => setYourName(e.target.value)}
+					/>
 					<label htmlFor=''>Your Email</label>
-					<input type='email' placeholder='Enter your email' />
+					<input
+						type='email'
+						name='email'
+						placeholder='Enter your email'
+						required
+						value={yourMail}
+						onChange={(e) => setYourMail(e.target.value)}
+					/>
 					<label htmlFor=''>Write your message here </label>
 					<textarea
 						name='message'
 						rows='8'
-						placeholder='Enter your message'></textarea>
+						placeholder='Enter your message '
+						required
+						value={yourMessage}
+						onChange={(e) => setYourMessage(e.target.value)}></textarea>
 					<button type='submit' className='contact-submit'>
-						{' '}
 						Submit now
 					</button>
 				</form>
