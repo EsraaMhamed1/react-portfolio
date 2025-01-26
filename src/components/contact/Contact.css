@@ -66,6 +66,10 @@
     gap: 20px;
 }
 
+.contact-detail a {
+	text-decoration: none;
+	color: #d8d8d8;
+}
 .contact-right{
     display: flex;
     flex-direction: column;
