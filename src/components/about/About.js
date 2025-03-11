@@ -49,10 +49,10 @@ const About = () => {
 							<hr style={{ width: '65%' }} />
 						</div>
 						<div className='about-skill'>
-							<p>Tailwind CSS</p> <hr style={{ width: '75%' }} />
+							<p>Tailwind </p> <hr style={{ width: '75%' }} />
 						</div>
 						<div className='about-skill'>
-							<p>Materila Ui</p> <hr style={{ width: '75%' }} />
+							<p>MUI</p> <hr style={{ width: '75%' }} />
 						</div>
 						<div className='about-skill'>
 							<p>R Studio</p> <hr style={{ width: '95%' }} />
