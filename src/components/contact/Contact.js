@@ -72,7 +72,7 @@ const Contact = () => {
 					onSubmit={onSubmit}
 					className='contact-right'
 					method='POST'>
-					<label htmlFor=''>Yor Name</label>
+					<label htmlFor=''>Your Name</label>
 					<input
 						type='text'
 						placeholder='Enter your name'
