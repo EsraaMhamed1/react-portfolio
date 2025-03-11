@@ -6,7 +6,7 @@ const Esraa = () => {
 		<div id={'home'} className='esraa'>
 			<img src={MyImage} alt='' />
 			<h1>
-				<span>I'm Esraa Mohamed,</span> frontend developer with React Js & Data
+				<span>I'm Esraa Mohamed,</span> frontend developer with React Js &Next.js, and Data
 				Analyst.
 			</h1>
 			<p>
