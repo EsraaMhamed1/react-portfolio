@@ -35,6 +35,7 @@ const Services = () => {
 						<div key={index} className='service-format'>
 							<h3>{service.s_no}</h3>
 							<h2>{service.s_name}</h2>
+
 							<div className='services-readmore'>
 								<ReadMore text={service.s_description} />
 							</div>

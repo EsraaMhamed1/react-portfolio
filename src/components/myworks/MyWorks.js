@@ -28,18 +28,19 @@ const MyWorks = () => {
 								alt=''
 							/>
 							<div className='link-btn'>
-								<button
+								{/* <button
 									className='demo'
 									onClick={() => {
 										window.open(project.demoUrl, '_blank');
 									}}>
 									Open{' '}
-								</button>
+								</button> */}
 								<button
 									className='githup'
 									onClick={() => {
 										window.open(project.githubUrl, '_blank');
-									}}>
+									}}
+								>
 									{' '}
 									Source code
 								</button>

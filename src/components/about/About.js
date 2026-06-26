@@ -1,11 +1,10 @@
 import './About.css';
 import Logo from '../../assets/Logo.png';
-import profile from '../../assets/profile.png';
 
 const About = () => {
-	const disableContextMenu = (event) => {
-		event.preventDefault();
-	};
+	// const disableContextMenu = (event) => {
+	// 	event.preventDefault();
+	// };
 	return (
 		<div id='about' className='about'>
 			<div className='about-title'>
@@ -14,52 +13,106 @@ const About = () => {
 			</div>
 
 			<div className='about-sections'>
-				<div className='about-left'>
+				{/* <div className='about-left'>
 					<img
 						src={profile}
 						alt=''
 						onContextMenu={disableContextMenu}
 						draggable='false'
 					/>
-				</div>
+				</div> */}
 				<div className='about-right'>
 					<div className='about-p'>
 						<p>
-							Graduated from factually of computers and information technology,
-							Assuit University ( FCI ), with grade verey good.
+							Graduated from the Faculty of Computers and Information, Assiut
+							University (FCI), with an overall grade of Very Good.
 						</p>
-						<p>I am Data analyst with R programming && paython. </p>
+						<p>
+							Data Analyst skilled in R, Python, and SQL with Frontend
+							expertise.{' '}
+						</p>{' '}
 					</div>
 
 					<div className='about-skills'>
-						<div className='about-skill'>
-							<p>HTML&CSS</p>
-							<hr style={{ width: '90%' }} />
+						<div style={{ marginBottom: '25px', width: '100%' }}>
+							<h3
+								className='hedr3'
+								style={{
+									fontSize: '1.2rem',
+									fontWeight: 'bold',
+									marginBottom: '12px',
+									textAlign: 'left',
+								}}
+							>
+								Data Analysis & Visualization
+							</h3>
+							<div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+								{[
+									'SQL (MySQL)',
+									'R Programming',
+									'Power BI',
+									'Tableau',
+									'Excel',
+									'Python (Pandas, NumPy)',
+								].map((skill, index) => (
+									<span
+										key={index}
+										style={{
+											padding: '6px 14px',
+											backgroundColor: '#1e1e1e',
+											color: '#f3f4f6',
+											fontSize: '0.9rem',
+											borderRadius: '20px',
+											border: '1px solid #333',
+											display: 'inline-block',
+										}}
+									>
+										{skill}
+									</span>
+								))}
+							</div>
 						</div>
-						<div className='about-skill'>
-							<p>JavaScript </p>
-							<hr style={{ width: '67%' }} />
-						</div>
-						<div className='about-skill'>
-							<p>React JS </p>
-							<hr style={{ width: '80%' }} />
-						</div>
-						<div className='about-skill'>
-							<p>Next JS </p>
-							<hr style={{ width: '65%' }} />
-						</div>
-						<div className='about-skill'>
-							<p>Tailwind CSS</p> <hr style={{ width: '75%' }} />
-						</div>
-						<div className='about-skill'>
-							<p>Materila Ui</p> <hr style={{ width: '75%' }} />
-						</div>
-						<div className='about-skill'>
-							<p>R Studio</p> <hr style={{ width: '95%' }} />
-						</div>
-						<div className='about-skill'>
-							<p>Python</p> <hr style={{ width: '60%' }} />
-						</div>
+
+						{
+							<div style={{ width: '100%' }}>
+								<h3
+									className='hedr3'
+									style={{
+										fontSize: '1.2rem',
+										fontWeight: 'bold',
+										marginBottom: '12px',
+										textAlign: 'left',
+									}}
+								>
+									Web Development (Frontend)
+								</h3>
+								<div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+									{[
+										'HTML',
+										'CSS',
+										'JavaScript',
+										'React JS',
+										'Next JS',
+										'Tailwind',
+									].map((skill, index) => (
+										<span
+											key={index}
+											style={{
+												padding: '6px 14px',
+												backgroundColor: '#1e1e1e',
+												color: '#f3f4f6',
+												fontSize: '0.9rem',
+												borderRadius: '20px',
+												border: '1px solid #333',
+												display: 'inline-block',
+											}}
+										>
+											{skill}
+										</span>
+									))}
+								</div>
+							</div>
+						}
 					</div>
 				</div>
 			</div>
@@ -82,6 +135,6 @@ const About = () => {
 			</div>
 		</div>
 	);
-};
+};;;;;
 
 export default About;

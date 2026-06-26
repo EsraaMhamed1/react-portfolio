@@ -1,15 +1,22 @@
 const Services_Data = [
 	{
 		s_no: '01',
-		s_name: 'Front End Developer',
+		s_name: 'Analyst & Consultant',
 		s_description:
-			'I am a front-end developer with a strong focus on creating responsive, user-friendly web interfaces. Skilled in HTML, CSS, JavaScript, and frameworks like React, I build visually appealing and efficient websites.',
+			'Extracting, cleaning, and uncovering trends from raw data using SQL, Python, and R. Transforming complex numbers into clear, interactive Power BI & Tableau dashboards that help businesses make data-driven decisions.',
 	},
 	{
 		s_no: '02',
-		s_name: 'Data Analyst',
+		s_name: ' Coding Instructor',
 		s_description:
-			'I am a proficient data analyst with expertise in using R for statistical analyses and data visualization. I specialize in collecting, cleaning, and analyzing datasets to uncover insights and drive data-driven decision-making. ',
+			'Simplifying data science, Python, and AI concepts for students and tech enthusiasts. Delivering hands-on programming sessions and helping future developers master data analysis fundamentals.',
+	},
+
+	{
+		s_no: '03',
+		s_name: 'Frontend & Analytics Developer',
+		s_description:
+			'Building responsive web platforms and custom data-driven applications using React.js and modern frontend tools. Bridging the gap between clean UI design and functional data experiences.',
 	},
 ];
 

@@ -16,6 +16,7 @@
 	padding: 0px 30px;
 	font-size: 80px;
 	font-weight: 600;
+	
 }
 
 .services-title img {
@@ -45,14 +46,16 @@
 	margin-bottom: 80px;
 }
 
+h2.spam{
+	color: white;
+}
 .service-format h3 {
 	font-size: 28px;
 	font-weight: 600;
 }
 
 .service-format h2 {
-	font-size: 38px;
-	font-weight: 800;
+	font-weight: 600;
 	background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
 	background-clip: text;
 	-webkit-background-clip: text;

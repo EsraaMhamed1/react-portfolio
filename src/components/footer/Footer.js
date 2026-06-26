@@ -10,7 +10,7 @@ const Footer = () => {
 						<h1>Esraa Mohamed</h1>
 						{/* <img src={Logo} alt=""/> */}
 					</div>
-					<p>Software Engineer && Bioinformatics Engineer && Data Analyst.</p>
+					<p> Data Scientest & AL .</p>
 				</div>
 				<div className='footer-top-right'>
 					<div className='footer-email-input'>
